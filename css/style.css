@@ -8,18 +8,29 @@ body {
 }
 
 .container {
+    display: flex;
     width: 95%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+nav {
+    font-family: Roboto, Helvetica, sans-serif;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background: gold !important; */
+}
+
 nav .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav h2 {
+    color: #fff;
     margin: 0;
 }
 
@@ -39,4 +50,44 @@ nav ul a {
 nav,
 header {
     background: #1f2937;
+}
+
+header {
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron__content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: #fff;
+    margin: auto;
+}
+
+.jumbotron__content .jumbotron__heading {
+    margin-bottom: 0;
+}
+
+.jumbotron__content .jumbotron__lead {
+    line-height: 1.5;
+}
+
+.jumbotron__btn {
+    background: #3882f6;
+    color: #fff;
+    border: none;
+    max-width: 200px;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#jumbotron img {
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
 }
