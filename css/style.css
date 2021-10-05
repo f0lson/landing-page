@@ -132,3 +132,13 @@ header {
     margin-top: 0;
     line-height: 1.5;
 }
+
+#quote {
+    padding: 70px 0;
+    background: #e5e7eb;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+#quote .quote {
+    font-size: 36px;
+}
